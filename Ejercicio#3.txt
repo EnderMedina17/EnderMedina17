@@ -1,0 +1,170 @@
+Console.WriteLine("Hello World");
+		
+            string dato = "";
+            int ActividadPerro = 0;
+            double peso = 0.0;
+            int opcion = 0;
+            
+            
+            
+            do{
+                
+                Console.WriteLine("Hola, Te demos la bienvenida al sistema que te dira cuanto debe comer tu canino.\n\n");
+                
+                
+                
+                Console.WriteLine("¿Que peso tiene tu perro o cachorro?:");
+                dato = Console.ReadLine();
+                peso = Convert.ToDouble(dato);
+                
+                Console.WriteLine("¿Como considera la actividad de su mascota?");
+                Console.WriteLine("1 - Actividad Alta 2-3 meses");
+                Console.WriteLine("2 - Actividad Normal 4-5 meses");
+                Console.WriteLine("3 - Actividad Baja 6-8 meses");
+                dato = Console.ReadLine();
+                ActividadPerro = Convert.ToInt32(dato);
+                
+                
+                //Tamaño Miniatura
+                if(peso <= 5 && peso >= 2) 
+                
+                    
+                    switch (ActividadPerro) {
+                        case 1:
+                            Console.WriteLine("tu canino debe comer entre 60 - 115 gramos de alimento.");
+                            break;
+                        case 2:
+                            Console.WriteLine("tu canino debe comer entre 55 y 100 gramos.");
+                            break;
+                        case 3:
+                            Console.WriteLine("tu canino debe comer entre 45 -85 gramos.");
+                            break;
+					}
+					
+				//Tamaño pequeno
+                if(peso <= 10 && peso >= 5) 
+                
+                    
+                    switch (ActividadPerro) {
+                        case 1:
+                            Console.WriteLine("tu canico debe comer entre 115 - 190 gramos de alimento.");
+                            break;
+                        case 2:
+                            Console.WriteLine("tu canino debe comer entre 100 y 170 gramos.");
+                            break;
+                        case 3:
+                            Console.WriteLine("tu canino debe comer entre 85 -145 gramos.");
+                            break;
+					}
+							
+				//Tamaño mediano
+                if(peso <= 15 && peso >= 10) 
+                
+                    
+                    switch (ActividadPerro) {
+                        case 1:
+                            Console.WriteLine("tu canico debe comer entre 190  - 225 gramos de alimento.");
+                            break;
+                        case 2:
+                            Console.WriteLine("tu canino debe comer entre 170 - 225 gramos.");
+                            break;
+                        case 3:
+                            Console.WriteLine("tu canino debe comer entre 145 -195 gramos.");
+                            break;
+							
+					}
+							
+				//Tamaño mediano 2
+                if(peso <= 25 && peso >= 15) 
+                
+                    
+                    switch (ActividadPerro) {
+                        case 1:
+                            Console.WriteLine("tu canico debe comer entre 255  - 380 gramos de alimento.");
+                            break;
+                        case 2:
+                            Console.WriteLine("tu canino debe comer entre 225 - 330 gramos.");
+                            break;
+                        case 3:
+                            Console.WriteLine("tu canino debe comer entre 195n- 285 gramos.");
+                            break;
+							
+					}
+							
+				//Tamaño mediano 3
+                if(peso <= 40 && peso >= 25) 
+                
+                    
+                    switch (ActividadPerro) {
+                        case 1:
+                            Console.WriteLine("tu canico debe comer entre 380  - 535 gramos de alimento.");
+                            break;
+                        case 2:
+                            Console.WriteLine("tu pcanino debe comer entre 330 - 475 gramos.");
+                            break;
+                        case 3:
+                            Console.WriteLine("tu canino debe comer entre 285 - 410 gramos.");
+							break;
+							
+					}
+							
+				//Tamaño grande 
+                if(peso <=55  && peso >= 40) 
+                
+                    
+                    switch (ActividadPerro) {
+                        case 1:
+                            Console.WriteLine("tu canico debe comer entre 535  - 680 gramos de alimento.");
+                            break;
+                        case 2:
+                            Console.WriteLine("tu canino debe comer entre 470 - 600 gramos.");
+                            break;
+                        case 3:
+                            Console.WriteLine("tu canino debe comer entre 410n- 520 gramos.");
+                            break;
+							
+					}
+							
+				//Tamaño grande 2
+                if(peso <=55  && peso >= 40) 
+                
+                    
+                    switch (ActividadPerro) {
+                        case 1:
+                            Console.WriteLine("tu canico debe comer entre 680  - 820 gramos de alimento.");
+                            break;
+                        case 2:
+                            Console.WriteLine("tu canino debe comer entre 600 - 720 gramos.");
+                            break;
+                        case 3:
+                            Console.WriteLine("tu canino debe comer entre 520n- 620 gramos.");
+                            break;
+							
+					}
+							
+				//Tamaño grande 3
+                if(peso <=55  && peso >= 40) 
+                
+                    
+                    switch (ActividadPerro) {
+                        case 1:
+                            Console.WriteLine("tu canico debe comer entre 820  - 935 gramos de alimento.");
+                            break;
+                        case 2:
+                            Console.WriteLine("tu canino debe comer entre 720 - 870 gramos.");
+                            break;
+                        case 3:
+                            Console.WriteLine("tu canino debe comer entre 620n- 750 gramos.");
+                            break;
+                    }
+                    
+                
+                Console.WriteLine("Si desea continuar escriba 1\n de lo contrario escriba 4");
+                dato = Console.ReadLine();
+                opcion = Convert.ToInt32(dato);
+                
+                Console.Clear();
+                
+                while (opcion != 4);
+				
+			}
